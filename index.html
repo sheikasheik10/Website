@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUBANSA SHEWIN DATE QUESTIONNAIRE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="page1" class="page">
+        <div class="content">
+            <p>Hi Gihansa,</p>
+            <p>I have been looking forward to this moment for a really long time...</p>
+            <p>THE BEST GIRL DESERVES THE BEST :) So here we go...</p>
+            <button onclick="nextPage(2)">CONTINUE</button>
+        </div>
+    </div>
+
+    <div id="page2" class="page hidden">
+        <div class="content">
+            <h1 class="animated-text">JUBANSA SHEWIN DATE QUESTIONNAREEE</h1>
+            <button onclick="nextPage(3)">CONTINUE</button>
+        </div>
+    </div>
+
+    <div id="page3" class="page hidden">
+        <div class="content">
+            <p>Do you want to go out with me on a date?</p>
+            <button onclick="recordResponse('YES')">YES</button>
+            <button onclick="recordResponse('NO')">NO</button>
+        </div>
+    </div>
+
+    <div id="page4" class="page hidden">
+        <div class="content">
+            <h1>YOU SAID YES! 🎉</h1>
+            <p>Congratulations on making the best decision of your life!</p>
+            <button onclick="nextPage(5)">CONTINUE</button>
+        </div>
+    </div>
+
+    <div id="page5" class="page hidden">
+        <div class="content">
+            <h2>DETAILS TO TELL YOUR MOTHER AND FATHER:</h2>
+            <p>DATE - 28th December 2024</p>
+            <p>TIME - 6 PM onwards</p>
+            <p>VENUE - MULTIPLE (Specifics on inquiry)</p>
+            <button onclick="generateExcel()">Finish</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
